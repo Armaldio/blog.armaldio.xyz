@@ -1,6 +1,10 @@
 ---
 title: Test
-excerpt: this is a test
 date: 2020-01-10T11:35:42.219Z
+published: true
+tags:
+  - web
+canonical_url: true
+description: description
 ---
 yeah this is a test
