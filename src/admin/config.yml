@@ -12,7 +12,19 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      # tags
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Publish Date", name: "date", widget: "date", format: 'YY-MM-DD'}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Tags", name: "tags", widget: "relation", collection: 'tags', searchFields: ["text"], valueField: "text", multiple: true}
+      - {label: "Canonical URL", name: "canonical_url", widget: "boolean", default: true}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "tags"
+    label: Tags
+    folder: "content/tags"
+    create: true
+    identifier_field: text
+    fields:
+      - {label: Text, name: text, widget: string}
