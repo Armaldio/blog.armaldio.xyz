@@ -1,28 +1,29 @@
 ---
 title: Progressive Web Apps
-date: 2017-08-03
+date: 2017-08-03T00:00:00.000Z
 published: true
-tags: ['pwa','web', 'service worker']
+tags:
+  - pwa
+  - web
+  - service worker
 canonical_url: false
-description: "During this week, I had to develop a Progressive Web App (PWA). Here, I will let you know about some awesome pieces of technology that everyone should use to make the web better. I will not go on the topic 'Native is faster, cleaner, better, ...', I will just expose my point of view."
+description: >-
+  During this week, I had to develop a Progressive Web App (PWA). Here, I will
+  let you know about some awesome pieces of technology that everyone should use
+  to make the web better. I will not go on the topic 'Native is faster, cleaner,
+  better, ...', I will just expose my point of view.
 ---
-
 During this week, I had to develop a Progressive Web App (PWA).
 
-Here, I will let you know about some awesome pieces of technology that everyone should use to make the web better.
-I will not go on the topic "Native is _faster_, _cleaner_, _better_, ...", I will just expose my point of view.
+Here, I will let you know about some awesome pieces of technology that everyone should use to make the web better. I will not go on the topic "Native is *faster*, *cleaner*, *better*, ...", I will just expose my point of view.
 
-When writing an app, sometimes you don't know about who will use it. So you ask yourself the question "_For which platform should I design my app ?_".
+When writing an app, sometimes you don't know about who will use it. So you ask yourself the question "*For which platform should I design my app ?*".
 
-With web, you don't have to ask this question. _Every_ popular device have a _browser_ (even TV !).
-You write the app once, and you can use it everywhere, than is very handy (though, you have to make the code/UI "_responsive_", so that it adapts to the platform it's on).
-So for my app, I chose not to write a regular web app, but something called a _Progressive Web App_.
-The app could be used either on a regular browser or on a mobile device.
+With web, you don't have to ask this question. *Every* popular device have a *browser* (even TV !). You write the app once, and you can use it everywhere, than is very handy (though, you have to make the code/UI "*responsive*", so that it adapts to the platform it's on). So for my app, I chose not to write a regular web app, but something called a *Progressive Web App*. The app could be used either on a regular browser or on a mobile device.
 
 # Progressive Web App
 
-According to Google, a PWA is _Reliable_, _Fast_ and _Engaging_.
-But what does that means ?
+According to Google, a PWA is *Reliable*, *Fast* and *Engaging*. But what does that means ?
 
 You have three types of connection :
 
@@ -49,40 +50,40 @@ With PWA, things are different. Here are some features :
 
 <a href="https://www.youtube.com/watch?v=xkme8WFyoXw"><figure class="tmblr-full" data-orig-height="410" data-orig-width="728" data-orig-src="https://images.frandroid.com/wp-content/uploads/2017/02/progressive-web-app-pwa.gif"><img class="ui fluid rounded image" alt="Add to homescreen gif" src="https://66.media.tumblr.com/e56d5ab77a13b4267657767f8d0cb076/tumblr_inline_pjzq37qoiG1s8uopm_540.gif" data-orig-height="410" data-orig-width="728" data-orig-src="https://images.frandroid.com/wp-content/uploads/2017/02/progressive-web-app-pwa.gif"></figure></a>
 
-A very interesting part is that you can cache pages (using Service Workers) and datas (using Database) wich means _saving datas on the user device_ to be able to serve them when user is offline. But _not only_!
+A very interesting part is that you can cache pages (using Service Workers) and datas (using Database) wich means *saving datas on the user device* to be able to serve them when user is offline. But *not only*!
 
-This is the principle of _offline first_
+This is the principle of *offline first*
 
-_First time_ :
+*First time* :
+
 1. User connect to website
 2. Website is served from server 
 3. Website is cached
 
-_Second time_ : 
+*Second time* : 
+
 1. User connect to website 
 2. Website load instantly from cache 
 3. Website check for new version 
 4. Website cache new version 
 5. Website ask the user if he wants to reload the page
 
-_Third time_ : 
+*Third time* : 
+
 1. User connect to website 
 2. New version of the app is served from cache 
 3. Website check for new version
 4. and the loop continues...
 
-And this system works whatever the connectivity of the user is because the _offline version_ is served first.
+And this system works whatever the connectivity of the user is because the *offline version* is served first.
 
 # Service Worker
 
-That's really nice but how do you achieve this kind of cache system ?
-Thanks to _Service workers_
-They are small pieces of code that _interceps_ browser requests
+That's really nice but how do you achieve this kind of cache system ? Thanks to *Service workers* They are small pieces of code that *interceps* browser requests
 
 ![Service worker image](https://infrequently.org/14/html5devconf_oct/images/sw_model.png)
 
-Not going too much into details, service workers have _events_ like _fetch_, _install_ or _activate_
-On service worker installation, you can cache all website data
+Not going too much into details, service workers have *events* like *fetch*, *install* or *activate* On service worker installation, you can cache all website data
 Then on fetch event (all single request goes to this function) you can do your check :
 
 ```js
@@ -98,11 +99,8 @@ You can even do more advanced stuff like, if the page isn't in the cache while f
 
 # Database
 
-Now, you know how to cache webpages and how to make an offline app
-But what about data that you fetch from external websites like _Firebase_ ?
-It works the same way but with database
-There are several libraries that can help you achieve what you want, but the default one is _indexedDB_
-You just have to open your database and get datas inside it :
+Now, you know how to cache webpages and how to make an offline app But what about data that you fetch from external websites like *Firebase* ? It works the same way but with database
+There are several libraries that can help you achieve what you want, but the default one is *indexedDB* You just have to open your database and get datas inside it :
 
 ```js
 var request = window.indexedDB.open("MyTestDatabase", 3);
@@ -116,25 +114,24 @@ Now you can use your offline datas and then (if internet connections) fetch new 
 
 # Conclusion
 
-I hope PWA have a bright future because I think it's composed of some awesome functionalities
-In a world where everyone is on his phone, everywhere in the world, and moving fast, an internet connection is not always available and it's very frustrating to not get the content you asked for.
+I hope PWA have a bright future because I think it's composed of some awesome functionalities In a world where everyone is on his phone, everywhere in the world, and moving fast, an internet connection is not always available and it's very frustrating to not get the content you asked for.
 Also performance in web is a great debate. If it's true that going to a browser, search for the website you want then wait for it to load if slower than a native app experience, it tends to be false with progressive web apps since browsers are more and more quick and powerful and cache does a great job in speed improvement.
 
 # References and links
 
-Indexed db : [https://developer.mozilla.org/fr/docs/Web/API/API_IndexedDB/Using_IndexedDB](https://developer.mozilla.org/fr/docs/Web/API/API_IndexedDB/Using_IndexedDB)
+Indexed db : <https://developer.mozilla.org/fr/docs/Web/API/API_IndexedDB/Using_IndexedDB>
 
-Google I/O 2016 : [https://www.youtube.com/watch?v=cmGr0RszHc8](https://www.youtube.com/watch?v=cmGr0RszHc8)
+Google I/O 2016 : <https://www.youtube.com/watch?v=cmGr0RszHc8>
 
 Jake Archibald "Service Worker fanatic" :
 
-* Twitter : [https://twitter.com/jaffathecake](https://twitter.com/jaffathecake)
-* Github : [https://github.com/jakearchibald](https://github.com/jakearchibald)
+* Twitter : <https://twitter.com/jaffathecake>
+* Github : <https://github.com/jakearchibald>
 
 Free Udemy course about PWA : [https://www.udacity.com/course/intro-to-progressive-web-apps–ud811](https://www.udacity.com/course/intro-to-progressive-web-apps--ud811)
 
-Service worker introduction : [https://developers.google.com/web/fundamentals/getting-started/primers/service-workers](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
+Service worker introduction : <https://developers.google.com/web/fundamentals/getting-started/primers/service-workers>
 
-Awesome Service Workers : [https://github.com/TalAter/awesome-service-workers](https://github.com/TalAter/awesome-service-workers)
+Awesome Service Workers : <https://github.com/TalAter/awesome-service-workers>
 
-Awesome PWA : [https://github.com/hemanth/awesome-pwa](https://github.com/hemanth/awesome-pwa)
+Awesome PWA : <https://github.com/hemanth/awesome-pwa>
