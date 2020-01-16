@@ -1,17 +1,17 @@
 ---
 title: Progressive Web Apps
-date: 2017-08-03T00:00:00.000Z
+date: 2017-08-03T00:00:00.000+00:00
 published: true
 tags:
-  - pwa
-  - web
-  - service worker
+- pwa
+- web
+- service worker
 canonical_url: false
-description: >-
-  During this week, I had to develop a Progressive Web App (PWA). Here, I will
-  let you know about some awesome pieces of technology that everyone should use
-  to make the web better. I will not go on the topic 'Native is faster, cleaner,
-  better, ...', I will just expose my point of view.
+description: I had to develop a Progressive Web App (PWA). I will let you know about
+  some awesome pieces of technology that everyone should use to make the web better.
+  I will not go on the topic 'Native is faster, cleaner, better, ...', I will just
+  expose my point of view.
+
 ---
 During this week, I had to develop a Progressive Web App (PWA).
 
