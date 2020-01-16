@@ -27,4 +27,5 @@ fields:
   label: Tags
 pages:
 - content/posts/transitioning-to-the-new-windows-terminal.md
+- content/posts/why-i-love-web-development-tooling.md
 - content/posts/why-i-was-wrong-with-typescript.md
