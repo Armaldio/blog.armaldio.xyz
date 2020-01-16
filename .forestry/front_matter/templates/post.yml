@@ -1,6 +1,7 @@
 ---
 label: Post
 hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
@@ -11,6 +12,7 @@ fields:
 - type: boolean
   name: published
   label: published
+  default: false
 - type: list
   name: tags
   label: tags
