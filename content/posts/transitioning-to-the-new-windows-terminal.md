@@ -9,4 +9,4 @@ canonical_url: false
 description: Sharing my thought about the new windows terminal
 
 ---
-Sharing my thought about the new windows terminalllll
+Sharing my thought about the new Windows terminal
