@@ -1,7 +1,7 @@
 ---
 title: Transitioning to the new Windows terminal
 date: 2020-01-15T23:00:00Z
-published: true
+published: false
 tags:
 - terminal
 - windows
