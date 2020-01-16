@@ -22,3 +22,5 @@ fields:
 - type: textarea
   name: description
   label: description
+pages:
+- content/posts/transitioning-to-the-new-windows-terminal.md
