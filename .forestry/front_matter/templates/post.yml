@@ -5,13 +5,21 @@ display_field: title
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+- type: boolean
+  name: canonical_url
+  label: Canonical URL
 - type: datetime
   name: date
-  label: date
+  label: Published date
 - type: boolean
   name: published
-  label: published
+  label: Is published
   default: false
 - type: list
   name: tags
@@ -23,11 +31,5 @@ fields:
       section: posts
       file: content/posts/crypo-monetizing.md
       path: tags
-- type: boolean
-  name: canonical_url
-  label: canonical_url
-- type: textarea
-  name: description
-  label: description
 pages:
 - content/posts/transitioning-to-the-new-windows-terminal.md
