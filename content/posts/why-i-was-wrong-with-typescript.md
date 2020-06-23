@@ -11,4 +11,4 @@ OK, I admit it. _I was wrong_
 
 I've always prefered jsdoc + babel.
 
-Type checking is always, and even more with Javascript that is highly dynamic
+Type checking is always good, and even more with Javascript that is highly dynamic
