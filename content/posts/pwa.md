@@ -13,7 +13,7 @@ description: I had to develop a Progressive Web App (PWA). I will let you know a
   expose my point of view.
 
 ---
-During week, I had to develop a Progressive Web App (PWA).
+During this week, I had to develop a Progressive Web App (PWA).
 
 Here, I will let you know about some awesome pieces of technology that everyone should use to make the web better. I will not go on the topic "Native is _faster_, _cleaner_, _better_, ...", I will just expose my point of view.
 
