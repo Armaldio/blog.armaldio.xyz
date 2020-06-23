@@ -7,4 +7,6 @@ date:
 published: false
 
 ---
-OK, I admit it. *I was wrong*
+OK, I admit it. _I was wrong_
+
+I've always prefered jsdoc + babel
