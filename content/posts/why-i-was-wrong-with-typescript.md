@@ -4,7 +4,7 @@ title: Why I was wrong with TypeScript
 description: ''
 canonical_url: false
 date: 
-published: true
+published: false
 
 ---
 OK, I admit it. _I was wrong_
